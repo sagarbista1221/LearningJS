@@ -1,3 +1,15 @@
+//<---- variables ------->
+
+// const person = "Ram";
+// console.log(person);
+
+// let xyz = "Power";
+// console.log(xyz);
+
+// var person1 = "Dangerous";
+// console.log(person1);
+
+
 // Q.) Write a JavaScript program that prints 'Hello World'.
 // console.log("Hello World");
 
@@ -17,6 +29,8 @@
 
 //Write a JavaScript program to check whether a given positive number is a multiple of 3 or 7.
 
-const num = +prompt("Enter any number");
+// const num = +prompt("Enter any number");
+
+
 
 
