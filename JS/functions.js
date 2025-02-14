@@ -3,7 +3,7 @@
 // principle = DRY donot repeat yourself
 
 // How it works?
-// Function takes Input, uses logic and returns ouput
+// Function takes Input, uses logic and returns output
 
 // Syntax
 
@@ -49,7 +49,7 @@
 1. Arrow Function (ES6)
 2. default function
 3. Parameterized  function
-4. Closure
+4. Closure (100% ask)
 5. IIFEs
 6. Explicit Function
 7. Implicit Function
@@ -58,4 +58,54 @@
 10. Callback Function
 */
 
-//ES6
+// Arrow Function (ES6)
+
+// Function sum(num1, num2){
+// const result = num1 + num2
+// return result;
+// }
+
+//function define
+// const sum = (num1, num2) => {
+//     const result = num1 + num2;
+//     return result;
+// }
+//function call
+// console.log(sum(2,2));
+
+//Default Function
+
+// const pagination = (page = 1) => {  ...........function>>>>>>>>>>>....... const = () => {return `..`}...............
+//     return  `page number ${page}`;
+// };
+// console.log(pagination(2));
+
+//write a function that says welcome person if user name is provided else it says welcome user
+//function declare
+// const welcome = (user="user") => {
+//     return `Welcome ${user}`;
+// };
+//function call
+// console.log(welcome("Sagar"));
+// console.log(welcome());
+
+// Parameterized function
+
+// const user = ({ user1, user2 = "user", user3 }) => {
+//     return '${user1}, ${user2}, $user{3}`;
+// };
+// console.log(users({user1: "r", user3: "m"}));
+
+// write a parameterized function to calculate the volume of cuboid volume = lbh
+
+// const volume = ({length, breadth, height}) => {
+//     return  length * breadth * height;
+// };
+// console.log(volume({length:2,breadth:3,height:4}));
+
+//5 IIFEs (Immediately Invoked Functional Expression)
+// ((a="test")=>{
+//     console.log("IIFE",a);
+// })(1); // edi esma big bracket vitra kei xaena vaney mathi a ko value run out hunxa
+
+// ()=>{} ......... //function
