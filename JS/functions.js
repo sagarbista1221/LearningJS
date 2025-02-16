@@ -56,6 +56,7 @@
 8. Anonymous Fuctioin
 9. Inline Function
 10. Callback Function
+11. Pure Function
 */
 
 // Arrow Function (ES6)
@@ -110,5 +111,106 @@
 
 // ()=>{} ......... //function
 
-// Closure (100% ask)
+//function can return primitive datatypes / complex datatype / function
 
+// Closure (100% ask) ...function nai output dinxa
+
+// let count = 1;
+// const counter = () => {
+//     const increment = count + 1;
+//     return increment;
+// };
+// console.log(counter());
+
+// const counter = () => {
+//     let count = 1;
+//     return () => {
+//         const increment = count++;
+//         return increment;
+//     };
+// };
+// const counterA = counter();
+// const counterB = counter();
+// console.log(counterA()); //Dashain
+// console.log(counterA()); //Dashain
+// console.log(counterA()); //Dashain
+
+// console.log(counterB()); //Tihar
+// console.log(counterB()); //Tihar
+
+// Private variables,,,,
+// Local Variables,,,, function vitra matra access garna sakinxa
+// Global Variables,,,,function vitra ya bahera access garna sakinxa
+// Lexical Scoping,,,,
+// Closure Concept,,,, lexical scoping => local,private variable,global variable
+
+//Write a js closure function that mimics the bank account opening and deposit
+// const accOpening = (initialAmount = 0) => {
+//     let amt = initialAmount;
+//     return () => amt;
+// }
+//  const accA = accOpening();
+//  const accB = accOpening(1000);
+
+//  console.log(accA(), accB());
+
+//Explicit function
+//  const summer = () => {
+//     return 0;
+//  };
+//  console.log({ summer: summer() });
+
+//  const summer = () => {
+//     return 0;
+//  };
+
+//  const addition = (a,b) => {
+//     const sum = a + b;
+//     return sum;
+//  };
+
+//Implicit Function
+// const summeraI = () => 0;
+
+// const addtionI = (a, b) => a + b;
+// console.log(summeraI());
+// console.log(addtionI(4, 5));
+
+// Write a js function that calculates the volume of cuboid v = l*b*h
+// const volume = ({l, b, h}) => l * b * h;...........baki+++
+
+//Anonymous function,,,, name na vako function,,,used in logger implementation
+
+// const test = function () {
+//     console.log("Test");
+// };
+// test();
+
+//Inline Function
+
+// const testInLine = function () {};
+
+//  Callback Function,, is a function that accepts another function as an parameter.
+
+// const print = (data) =>{
+//     console.log(`Hello ${data}`);
+// };
+
+// const main = (user, callbackFn) => {
+//     const information = `Mr ${user}`;
+//     return callbackFn(information);
+// };
+
+// main("raktim", print);
+
+//write a callback function to calculate the VAT of the product 13 % of item cost
+
+// const calcTax = (qty,cp) => 0.13 * +qty * +cp;
+
+// const cart =({item,quantity = 1, tax}) => {
+//     return tax(quantity,item);
+// };
+// const taxAmt = cart({item:100, tax: calcTax});
+// console.log(taxAmt);
+
+//Pure Function....result does  not change for the same input
