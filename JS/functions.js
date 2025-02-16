@@ -109,3 +109,6 @@
 // })(1); // edi esma big bracket vitra kei xaena vaney mathi a ko value run out hunxa
 
 // ()=>{} ......... //function
+
+// Closure (100% ask)
+
