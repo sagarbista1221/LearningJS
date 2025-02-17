@@ -27,3 +27,52 @@ const isMale = true;
 console.log(isMale);
 
 // Type conversion or Type coercion
+
+const value = "13";
+const actualNumber = Number(value); // type conversion
+console.log(actualNumber);
+console.log(typeof actualNumber);
+console.log(typeof value); //give your information about data type, type checking
+
+//Convert number to string
+const num = 13;
+const numToString = String(num);
+console.log(num, numToString);
+
+//Write a program that divides the two numbers asking user for the 2 number inputs and alert the result
+// const num1 = +prompt("Enter the first number");
+// const num2 = +prompt("Enter second number");
+// const result = num1/num2;
+// alert(`The result of division between ${num1} and ${num2} is ${result}`);
+
+//unary operator
+let val = 1;
+val++; //2
+val += 3; //5
+console.log(val);
+
+//consitional operators
+//ES5
+//If-else, Switch-case
+//ES6
+//ternary operator
+
+// If else only target two conditons
+// const gender = prompt("Gender");
+// if(gender==="m"){
+//     console.log("Male");
+// }else {
+//     console.log("Female");
+// }
+
+// const day =+prompt("Enter day from 1 to 7");
+// switch(day){
+//     case 1:
+//     alert("Sunday");
+//     break;
+//     case 2:
+//         alert("Monday");
+//         break;
+//         default:
+//             alert("invalid number");
+// }
