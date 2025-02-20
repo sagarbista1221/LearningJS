@@ -45,15 +45,69 @@
 
 //Write a js function to create a proper case
 //"raktim shrestha" => "Raktim Shrestha"
+
+// const properCase = (data= "") =>{
+//     const text = String(data).toLowerCase();
+//     let result = "";
+//     let check = true;
+//     for(let i=0; i<text.length; i++){
+//         const char = text[i];
+//         if(check){
+//             result += char.toUpperCase();
+//             check = false;
+//         }else if (char ==""){
+//             result += char;
+//             check = true;
+//         } else {
+//             result += char;
+//         }
+
+//     }
+//     return result;
+// }
+// console.log(properCase("sagar bista is my name"));
+// console.log(properCase("sAGAR bistA is my naMe"));
 //code at
 
 //Write a js function to clean the data
 //"    Raktim       Shrestha     " => "Raktim Shrestha"
+//Solution method:trim & replaceAll
+
+function cleanData(str) {
+  return str.trim().replaceAll(/\s+/g, " ");
+}
+console.log(cleanData("    Raktim       Shrestha     "));
+
+//check it not work
+// const name = "   Raktim      Shrestha     ";
+// console.log(name);
+// Expected output: "   Hello world!   ";
+// console.log(name.trim());
+// Expected output: "Hello world!";
 
 //Write a js function to convert any number to formatted number
 // 1000 => 1,000
 //10000 => 10,000; 1000000 => 1,000,000
+// solution method: toLocalString()
+
+function formatNumber(num) {
+  return num.toLocaleString();
+}
+console.log(formatNumber(1000)); // "1,000"
+console.log(formatNumber(10000)); // "10,000"
+console.log(formatNumber(1000000)); // "1,000,000"
+console.log(formatNumber(123456789)); // "123,456,789"
 
 //Write a js function to check if the string contains the word or not
 //"Raktim is a teacher" => search Teacher => true
-//"Raktim is a teacher" => seach father => false
+//"Raktim is a teacher" => search father => false
+//solution methods: includes
+
+function containsWord(sentence, word) {
+  return sentence.toLowerCase().includes(word.toLowerCase());
+}
+
+// Example usage
+console.log(containsWord("Raktim is a teacher", "Teacher")); // true
+console.log(containsWord("Raktim is a teacher", "father")); // false
+console.log(containsWord("Raktim is a teacher", "raktim")); // true

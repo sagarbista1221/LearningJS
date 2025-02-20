@@ -214,3 +214,8 @@
 // console.log(taxAmt);
 
 //Pure Function....result does  not change for the same input
+
+
+// function two types
+// 1.) function(){};
+// 2.) function () => {};
